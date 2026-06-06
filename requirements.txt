@@ -1,0 +1,13 @@
+# financial-regime-markov
+# Core scientific stack
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7
+seaborn>=0.12
+
+# Data acquisition (needed for real SPY data)
+yfinance>=0.2.36
+
+# Testing
+pytest>=7.4
