@@ -63,11 +63,9 @@ $$\pi^{(t+1)} = \pi^{(t)} P$$
 
 **Source:** SPY ETF adjusted close, Yahoo Finance, 2000–2024
 
-**Regime classification**
+**Regime classification:**
 
-- Bull if $r_t^20 > 2\%$
-- Bear if $r_t^20 < -2\%$
-- Neutral otherwise
+$$\text{regime}_t = \begin{cases} \text{Bull} & r_t^{20} > +2\% \\ \text{Bear} & r_t^{20} < -2\% \\ \text{Neutral} & \text{otherwise} \end{cases}$$
 
 where $r_t^{20} = (P_t - P_{t-20}) / P_{t-20}$ is the trailing 20-day return.
 
