@@ -66,8 +66,8 @@ $$\pi^{(t+1)} = \pi^{(t)} P$$
 **Regime classification:**
 
 $$\text{regime}_t = \begin{cases} 
-\text{Bull} & r_t^{20} > +2\% \\ 
-\text{Bear} & r_t^{20} < -2\% \\ 
+\text{Bull} & r_t^{20} > +2\\% \\ 
+\text{Bear} & r_t^{20} < -2\\% \\ 
 \text{Neutral} & \text{otherwise} 
 \end{cases}$$
 
@@ -81,7 +81,7 @@ where $r_t^{20} = (P_t - P_{t-20}) / P_{t-20}$ is the trailing 20-day return.
 
 ### Transition Matrix
 
-Estimated via maximum likelihood: $\hat{P}_{ij} = n_{ij} / n_i$, then Laplace-smoothed with $\alpha = 1$ (uniform Dirichlet prior).
+Estimated via maximum likelihood: $\hat P_{ij}=\frac{n_{ij}}{n_i}$, then Laplace-smoothed with $\alpha = 1$ (uniform Dirichlet prior).
 
 |  | → Bull | → Neutral | → Bear |
 |---|---|---|---|
